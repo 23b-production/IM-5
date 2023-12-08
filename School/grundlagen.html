@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Scrollytelling Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- Docsearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+
+
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1472173148041-00294f0814a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100" alt="Description">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Willkommen zu den Grundlagen</h1>
+              <p class="opacity-75">Hier erfährst du das Grundlegende.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center">Grundlagen | Terminologie</h1>
+          </div>
+        </div>
+
+      </div>
+      <hr class="divider">
+      <div class="row text-center">
+        <div class="col-12">
+          <h3>Wichtige Begrifflichkeiten</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <tr>
+              <th>Features</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><strong>Prompt</strong></td>
+              <td>Nachricht, die du ChatGPT schickst (Startpunkt der Unterhaltung)</td>
+            </tr>
+            <tr>
+              <td><strong>Response</strong></td>
+              <td>KI-generierte Ausgabe (Antwort auf deinen Prompt)</td>
+            </tr>
+            <tr>
+              <td><strong>Model</strong></td>
+              <td>Version der KI, die du verwendest (ChatGPT-3.5 bzw. ChatGPT-4)</td>
+            </tr>
+            <tr>
+              <td><strong>Training Data</strong></td>
+              <td>Menge an Textdaten aus Büchern, Websites und anderen Quellen, mit denen ChatGPT trainiert wurde</td>
+            </tr>
+            <tr>
+              <td><strong>Knowledge Cutoff</strong></td>
+              <td>Zeitpunkt, an dem die Trainingsdaten des Modells enden (ChatGPT-3.5: Januar 2022 / ChatGPT-4: April 2023)</td>
+            </tr>
+            <tr>
+              <td><strong>Parameter</strong></td>
+              <td>Einstellungen, die bestimmen, wie ChatGPT den Text generiert</td>
+            </tr>
+            <tr>
+              <td><strong>Token</strong></td>
+              <td>kleinste Texteinheit, die KI liest (1 Token = ungefähr 0,75 Wörter)</td>
+            </tr>
+            <tr>
+              <td><strong>Conversation</strong></td>
+              <td>Dialog zwischen User:in und ChatGPT (Abfolge von Nachrichten)</td>
+            </tr>
+            <tr>
+              <td><strong>Fade Out</strong></td>
+              <td>Ende der Erinnerungskapazität (Informationen «verblassen» mit fortlaufender Konversation langsam. Hängt mit Token-Limitation zusammen)</td>
+            </tr>
+            <tr>
+              <td><strong>Context</strong></td>
+              <td>Teil der Konversation, den KI bei Textgenerierung berücksichtigt (zwischen 3‘000 - 6‘000 Worte). Hängt mit Fade Out und Token-Limitation zusammen</td>
+            </tr>
+          </table>
+          
+          
+        </div>
+      </div>
+      <hr class="divider">
+    </div>
+
+    <div class="container py-4">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h3>Wichtigste Einschränkungen von ChatGP</h3>
+          <table class="table table-hover">
+            <tr>
+              <td><strong>Wissenstand</strong></td>
+              <td>kein Zugang zu aktuellen Informationen (Wissen endet Jan. 2022)</td>
+            </tr>
+            <tr>
+              <td><strong>Bias</strong></td>
+              <td>Übernahme von Verzerrungen und Vorurteilen aus Trainingsdaten</td>
+            </tr>
+            <tr>
+              <td><strong>Zensur</strong></td>
+              <td>Blockierung «unerwünschter» Antworten durch inhaltliche Filter</td>
+            </tr>
+            <tr>
+              <td><strong>Halluzinationen</strong></td>
+              <td>Gefahr von plausibel klingenden, aber faktisch inkorrekten Outputs</td>
+            </tr>
+            <tr>
+              <td><strong>Fade Out</strong></td>
+              <td>limitierte «Erinnerungskapazität» (max. 6‘000 Worte berücksichtigt)</td>
+            </tr>
+            <tr>
+              <td><strong>Conversation Border</strong></td>
+              <td>strikte Trennung der Konversationen (kein Wissenstransfer möglich)</td>
+            </tr>
+          </table>
+          
+        </div>
+        <div class="col-md-6">
+          <h3>Wichtigste Einschränkung der Nutzenden: Datenschutz</h3>
+          <p><strong>Problem:</strong> OpenAI speichert Konversationen und alle darin enthaltene Daten, um das
+            Sprachmodell im Hintergrund des Dienstes zu trainieren.</p>
+            <table class="table table-hover">
+              <tr>
+                <td><strong>Option 1</strong></td>
+                <td>bewusster Einsatz und konsequente Anonymisierung der Kundendaten</td>
+              </tr>
+              <tr>
+                <td><strong>Option 2</strong></td>
+                <td>Opt-out in Einstellungen (Data Controls). ABER: Verlust der Chat-History</td>
+              </tr>
+              <tr>
+                <td><strong>Option 3</strong></td>
+                <td>Opt-out über Online-Formular. ABER: Zugang tief im OpenAI-Forum versteckt</td>
+              </tr>
+              <tr>
+                <td><strong>Option 4</strong></td>
+                <td>Nutzung des Dienstes über API von OpenAI. ABER: techn. Know-how nötig</td>
+              </tr>
+              <tr>
+                <td><strong>Wichtigste Einschränkung der Nutzenden</strong></td>
+                <td>Datenschutz</td>
+              </tr>
+              <tr>
+                <td><strong>Option 5</strong></td>
+                <td>Upgrade zu ChatGPT Enterprise. ABER: keine Kostenübersicht publiziert</td>
+              </tr>
+            </table>
+            
+        </div>
+      </div>
+    </div>
+    <!-- Start Second-->
+    <section id="oneDivider" class="d-oneD-1 h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h3>Was sind Custom Instructions?</h3>
+            <p>Personalisierte Informationen über User:in, die prompt- und konversationsübergreifend beachtet werden.
+            </p>
+            <ul class="custom-list">
+              <li><strong>Nutzen:</strong> ChatGPT generiert relevantere Antworten aufgrund von personalisiertem
+                Kontext.
+              </li>
+              <li><strong>Funktion:</strong> ChatGPT wendet Custom Instructions auf jeden Input (promptübergreifend) an.
+              </li>
+              <li><strong>Beispiel:</strong> Einstellung der Schweizer Rechtschreibung.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Second-->
+
+
+    <div class="container py-4">
+      <div class="row pt-5">
+        <div class="col-md-6">
+          <h3>Inhalt: Informationen über Nutzer:in</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Inhalt</strong></td>
+                <td>Informationen über Nutzer:in</td>
+              </tr>
+              <tr>
+                <td><strong>Beruf/Rolle</strong></td>
+                <td>Ich bin ein [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Herausforderungen</strong></td>
+                <td>Derzeit arbeite ich an [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>ChatGPT</strong></td>
+                <td>Grundlagen | Custom Instructions</td>
+              </tr>
+              <tr>
+                <td><strong>Besondere Interessen</strong></td>
+                <td>Ich interessiere mich leidenschaftlich für [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Werte und Prinzipien</strong></td>
+                <td>Ich schätze [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Lernstil</strong></td>
+                <td>Ich lerne am besten durch [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>pers. Hintergrund</strong></td>
+                <td>Ich wohne in [Inhalt einfügen] und arbeite in [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Ziele</strong></td>
+                <td>Mein unmittelbares Ziel ist es, [Inhalt einfügen]. Langfristig will ich [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Präferenzen</strong></td>
+                <td>Ich verwende [Inhalt einfügen] für meine Projekte.</td>
+              </tr>
+              <tr>
+                <td><strong>Sprachkenntnisse</strong></td>
+                <td>Deutsch ist meine Muttersprache, aber ich spreche auch Englisch und bin in der Lage, beide Sprachen in einem beruflichen Kontext zu verwenden.</td>
+              </tr>
+              <tr>
+                <td><strong>spezialisiertes Wissen</strong></td>
+                <td>Ich bin spezialisiert auf [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Bildungshintergrund</strong></td>
+                <td>Ich habe einen Abschluss in [Inhalt einfügen].</td>
+              </tr>
+              <tr>
+                <td><strong>Kommunikationsstil</strong></td>
+                <td>Ich bin freundlich und doch professionell und schätze eine klare, präzise Kommunikation.</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+        <div class="col-md-6">
+          <h3>Inhalt: Informationen über Erwartungshaltung</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Antwortformat</strong></td>
+                <td>Gib klar strukturierte Antworten und fassen Sie die wichtigsten Punkte am Anfang zusammen.</td>
+              </tr>
+              <tr>
+                <td><strong>Sprich mich an</strong></td>
+                <td>Sprich mich in der zweiten Person Singular an (Du).</td>
+              </tr>
+              <tr>
+                <td><strong>Tonfall</strong></td>
+                <td>Achte auf einen professionellen Ton, der zwischen Freundlichkeit und Förmlichkeit liegt.</td>
+              </tr>
+              <tr>
+                <td><strong>Sprachgebrauch</strong></td>
+                <td>Verwende eine inklusive Sprache (z. B. Studierende oder Kund:innen).</td>
+              </tr>
+              <tr>
+                <td><strong>ChatGPT</strong></td>
+                <td>Grundlagen | Custom Instructions</td>
+              </tr>
+              <tr>
+                <td><strong>Detailgrad</strong></td>
+                <td>Ich schätze gründliche, aber prägnante Erklärungen.</td>
+              </tr>
+              <tr>
+                <td><strong>Folgefragen</strong></td>
+                <td>Stelle Fragen, die strategisches Denken und Kreativität anregen.</td>
+              </tr>
+              <tr>
+                <td><strong>Überprüfung</strong></td>
+                <td>Bitte überprüfe alle Informationen auf ihre Richtigkeit.</td>
+              </tr>
+              <tr>
+                <td><strong>Denkweise</strong></td>
+                <td>Biete durchdachte Perspektiven und zeige ein nuanciertes Verständnis für das Thema.</td>
+              </tr>
+              <tr>
+                <td><strong>Kreativität</strong></td>
+                <td>Ich begrüsse innovative Ideen, die konventionelle Ansätze in Frage stellen.</td>
+              </tr>
+              <tr>
+                <td><strong>Lösungsansatz</strong></td>
+                <td>Ich bevorzuge einen strategischen Problemlösungsansatz. Bitte vermeide es, eine Strategie ohne triftige Gründe einer anderen vorzuziehen.</td>
+              </tr>
+              <tr>
+                <td><strong>Sprache</strong></td>
+                <td>Ich bevorzuge Standarddeutsch (Schweizer Rechtschreibung) mit branchenspezifischer Terminologie nach Bedarf.</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section id="th-sec" class="section bfooter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 center-txt">
+            <h5>"Das Aufkommen von wirklich denkenden Maschinen wird das wichtigste Ereignis in der
+              Menschheitsgeschichte sein."</h5>
+            <p> - Max Tegmark</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../assets/js/color-modes.js"></script>
+  <!-- Script to Load Header & Footer -->
+  <script src="js/loadHeaderFooter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

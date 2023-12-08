@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Scrollytelling Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- Docsearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+
+
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d3JpdGUlMjBvbiUyMGNvbXB1dGVyfGVufDB8fDB8fHww"
+            class="d-block w-100" alt="Description">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Die Kunst des Prompting</h1>
+              <p class="opacity-75">Effektive Techniken für präzise und zielgerichtete Abfragen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-4">
+      <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center">Grundlagen | Prompting</h1>
+          </div>
+        </div>
+
+      </div>
+      <hr class="divider">
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h3>Zero-Shot-Prompting</h3>
+          <p>Prompt enthält Anweisungen ohne Beispiele
+            Ist der folgende Satz positiv, neutral oder negativ? Ich freue mich, bald neue
+            Bachelor-Thesen zu betreuen.</p>
+          <ul class="custom-list">
+            <li><strong>Vorgehen:</strong> ChatGPT greift zu Problemlösung nur auf Trainingsdaten zurück.</li>
+            <li><strong>Einsatz:</strong> Einfache Aufgaben ohne Beschränkungen / mit offenem Ausgang.</li>
+            <li><strong>Beispiel:</strong> Geeignet für Entwürfe, Inspiration und Brainstorming von Ideen.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>One-Shot-Prompting / Few-Shot-Prompting</h3>
+          <p>Prompt enthält Anweisungen und liefert exemplarisch Musterlösungen mit
+            Erstelle eine Tabelle mit einer Checkliste für Bachelor-Thesen. Nutze dabei
+            folgendes Beispiel als Grundlage für die Tabellen-Spalten:
+            Beispiel: Nr. | Task | Kurzbeschrieb | Beispiel | potenzielle Risiken | Tipps & Tricks</p>
+          <ul class="custom-list">
+            <li><strong>Vorgehen:</strong> ChatGPT greift auf Trainingsdaten und Musterlösung zurück.</li>
+            <li><strong>Einsatz:</strong> Aufgaben mit logischen Abläufen und klaren Strukturierungen.</li>
+            <li><strong>Beispiel:</strong> Geeignet für strikte Format- und Strukturvorgaben mit klar festgelegten
+              Zielen (z. B. Ausgabe in einer vordefinierten Tabelle).</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="divider">
+    </div>
+
+    <div class="container py-4">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h3>Chain-of-Thought-Prompting (auch Chained Prompting genannt)</h3>
+          <p>Du bist Betreuer einer Bachelor-Thesis und hast die Aufgabe, einen Blog-Artikel über
+            die Freuden dieser Beschäftigung zu schreiben. Liste zuerst die Gliederung des Artikels
+            auf, die aus einer Headline, einem Teaser und mehreren Zwischenüberschriften
+            besteht.
+            Schreibe fünf Kernbotschaften zu jeder Zwischenüberschrift.
+            Verfasse auf dieser Grundlage einen Artikel für den studentischen Blog einer
+            Fachhochschule und optimiere ihn für ein junges Publikum. Strukturiere den Artikel mit
+            Markdown.</p>
+          <ul class="custom-list">
+            <li><strong>Vorgehen:</strong> ChatGPT greift auf Trainingsdaten und auf Vorarbeit / Ergebnisse der
+              Zwischenschritte zurück.</li>
+            <li><strong>Einsatz:</strong> Komplexere Aufgaben, die kontextbezogene Antworten verlangen.</li>
+            <li><strong>Beispiel:</strong> Lange Artikel, Logik-Aufgaben.</li>
+            <li><strong>In anderen Worten:</strong> ChatGPT beginnt nicht sofort mit der eigentlichen Aufgabe, sondern
+              legt zuerst die definierten Zwischenschritte ein und lässt die Ergebnisse dieser Vorarbeit ins Endresultat
+              einfliessen.</li>
+            <li><strong>TIPP:</strong> Kombiniere Chained Prompts mit Follow-up-Prompts, um das Ergebnis weiter zu
+              verfeinern.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Second-->
+    <section id="oneDivider" class="d-oneD-2 h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h2 class="white">Weitere Prompt-Techniken im Überblick</h2>
+          <div class="col-md-4">
+            <h3>Self-Consistency</h3>
+            <p>Generiert mehrere Outputs, um verschiedene Lösungen zu ergründen und wählt die konsistenteste Antwort
+              aus.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Generated Knowledge</h3>
+            <p>Nutzt externe Kontextinformationen, um relevante Aussagen zu generieren und nutzt die Erkenntnisse für
+              Antwort.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Tree of Thoughts</h3>
+            <p>Erzeugt mehrere Gedankenstränge und verfolgt mehrere Pfade gleichzeitig, um ein Problem zu lösen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Second-->
+
+    <div class="container py-4">
+      <h2 class="text-center">Universale Prompt-Formel 1</h2>
+      <div class="row text-center">
+        <div class="col-md-5">
+          <h3>GUIDE-Modell</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Goal</strong></td>
+                <td>Definiere das Ziel deines Prompts.</td>
+              </tr>
+              <tr>
+                <td><strong>User</strong></td>
+                <td>Beschreibe den Kontext (Zielgruppe und Rahmenbedingungen).</td>
+              </tr>
+              <tr>
+                <td><strong>Instructions</strong></td>
+                <td>Teile ChatGPT seine Rolle und Aufgabenschritte mit.</td>
+              </tr>
+              <tr>
+                <td><strong>Details</strong></td>
+                <td>Nenne wichtige Zusatzinformationen (Einschränkungen wie Tonalität, Format, etc.).</td>
+              </tr>
+              <tr>
+                <td><strong>Example</strong></td>
+                <td>Inkludiere Orientierungshilfen durch Beispiele.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="font-weight-bold">Legende: <span style="color: red;">Goal</span> | <span
+              style="color: blue;">User</span> | <span style="color: green;">Instructions</span> | <span
+              style="color: #ffd300;">Details</span> | <span style="color: #ffd300;">Example</span></p>
+        </div>
+        <div class="col-md-7">
+          <h3>Universale Prompt-Formel (Beispiel)</h3>
+          <p style="color: red;">Ich will, dass du geeignete Themen für eine Bachelor-Thesis formulierst. Hier findest
+            du relevante Kontextinformationen: Die Thesis findet im Rahmen des Studiengangs «Multimedia Production» an
+            der Fachhochschule Graubünden statt und wird von einem Bachelor-Studierenden in einem Zeitrahmen von drei
+            Monaten umgesetzt.</p>
+          <p style="color: blue;">Du bist akademischer Forschungsexperte und betreust seit 20 Jahren Bachelor-Thesen von
+            Studierenden. Beachte bei der Erarbeitung möglicher Themen folgende Instruktionen:</p>
+          <ul style="color: green;" class="custom-list">
+            <li>Suche nach interessanten Themen für Multimedia Produzenten</li>
+            <li>Prüfe, ob die Themen aktuell, akademisch relevant und unerforscht sind</li>
+            <li>Wähle die fünf vielversprechendsten Themen aus.</li>
+          </ul>
+          <p style="color: #ffd300;">Beziehe folgende Zusatzinformationen in deine Überlegungen mit ein:</p>
+          <ul style="color: #ffd300" class="custom-list">
+            <li>Achte auf eine akademische Tonalität</li>
+            <li>Liste deine Vorschläge tabellarisch auf</li>
+          </ul>
+          <p style="color: grey;">Nutze folgendes Beispiel als Vorbild und Orientierungshilfe zum Aufbau der Tabelle:
+            Thema | Kurzbeschrieb | Begründung | Relevanz.</p>
+        </div>
+      </div>
+      <hr class="divider">
+    </div>
+
+    <div class="container py-4">
+      <h2 class="text-center">Universale Prompt-Formel 2</h2>
+      <div class="row text-center">
+        <div class="col-md-5">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Kategorie</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Context</strong></td>
+                <td>Definiere den Kontext und erkläre, was dich einzigartig macht.</td>
+              </tr>
+              <tr>
+                <td><strong>Intent</strong></td>
+                <td>Nenne deine Intention und deklariere die Ziele deines Prompts.</td>
+              </tr>
+              <tr>
+                <td><strong>Style</strong></td>
+                <td>Beschreibe Sprache, Tonalität und Persönlichkeit des Resultats.</td>
+              </tr>
+              <tr>
+                <td><strong>Command</strong></td>
+                <td>Liste detaillierte Instruktionen auf, die beachtet werden müssen.</td>
+              </tr>
+              <tr>
+                <td><strong>Output</strong></td>
+                <td>Lege das Format der Antwort fest und nenne konkrete Beispiele.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="font-weight-bold">Legende: <span style="color: red;">Content</span> | <span
+              style="color: blue;">Intent</span> | <span style="color: green;">Style</span> | <span
+              style="color: #ffd300;">Command</span> | <span style="color: grey;">Output</span></p>
+        </div>
+        <div class="col-md-7">
+          <h3>Universale Prompt-Formel (Beispiel)</h3>
+          <p style="color: red;">Ich arbeite für die Fachhochschule Graubünden und betreue Studierende bei ihrer
+            Bachelor-Thesis. Mich unterscheidet von anderen Forschungsexperten, dass ich grossen Wert auf eine
+            persönliche Betreuung lege und Studierende dabei unterstütze, die bestmögliche Thesis abzugeben.</p>
+          <p style="color: blue;">Schlage fünf Themen für eine Bachelor-Thesis vor, die sich für den Studiengang
+            «Multimedia Production» eignen und sich von einem Bachelor-Studierenden in einem Zeitrahmen von drei Monaten
+            umsetzten lassen.</p>
+          <p style="color: #ffd300;"><span style="color: green;">Achte auf eine akademische Tonalität</span> und halte
+            dich an folgende Instruktionen:</p>
+          <ol style="color: #ffd300;">
+            <li>Suche nach interessanten Themen für Multimedia Produzenten</li>
+            <li>Prüfe, ob die Themen aktuell, akademisch relevant und unerforscht sind</li>
+            <li>Wähle die interessantesten Themen aus</li>
+            <li>Analysiere deine Vorschläge auf ihre Einzigartigkeit</li>
+            <li>Liste die fünf vielversprechendsten Themen auf</li>
+          </ol>
+          <p style="color: grey;">Gib deine Vorschläge als Tabelle mit den Kategorien Thema | Kurzbeschrieb | Begründung
+            | Relevanz aus.</p>
+
+        </div>
+      </div>
+      <hr class="divider">
+    </div>
+
+    <div class="container py-4">
+      <h2 class="text-center">Universale Prompt-Formel 3</h2>
+      <div class="row text-center">
+        <div class="col-md-5">
+          <table class="table table-hover">
+            <tr>
+              <th>Aspekt</th>
+              <th>Beschreibung</th>
+            </tr>
+            <tr>
+              <td><strong>Task</strong></td>
+              <td>Definiere das endgültige Ziel deines Prompts eindeutig</td>
+            </tr>
+            <tr>
+              <td><strong>Context</strong></td>
+              <td>Beschreibe den Kontext: Ausgangslage, Rahmenbedingungen und Zielgruppe, Erfolgsindikatoren</td>
+            </tr>
+            <tr>
+              <td><strong>Examples</strong></td>
+              <td>Inkludiere ein strukturiertes Beispiel zur Vorgehensweise</td>
+            </tr>
+            <tr>
+              <td><strong>Persona</strong></td>
+              <td>Weise der KI eine klare Rolle zu (wähle bestgeeignete Person für Task)</td>
+            </tr>
+            <tr>
+              <td><strong>Format</strong></td>
+              <td>Bestimme ein Ausgabeformat (Text, Bullet Points, Markdown, Code block, Tabelle...)</td>
+            </tr>
+            <tr>
+              <td><strong>Tone</strong></td>
+              <td>Wähle eine Tonalität (informativ, emotional, formell, inspirierend, unterhaltsam, trocken...)</td>
+            </tr>
+          </table>
+
+
+          <div class="text-center">
+            <i class="fas fa-arrow-down" aria-hidden="true">abnehmende wichtigkeit</i>
+          </div>
+          <p class="font-weight-bold">Legende:
+            <span style="color: red;">Persona</span> | <span style="color:blue;">Context</span> | <span
+              style="color: brown;">Task</span> | <span style="color: green;">Format</span> | <span
+              style="color: #ffd300;">Example</span> | <span style="color: grey;">Tone</span>
+          </p>
+        </div>
+        <div class="col-md-7">
+          <h3>Universale Prompt-Formel (Beispiel)</h3>
+          <p style="color: blue;"><span style="color: red;">Du arbeitest für die Fachhochschule Graubünden und betreust
+              seit 20 Jahren Studierende bei ihrer Bachelor-Thesis.</span>Deine Aufgabe ist es, einem Studierenden fünf
+            Themen für seine Bachelor-Thesis vorzuschlagen, die sich für den Studiengang «Multimedia Production» eignen,
+            sich von einem Bachelor-Studierenden in einem Zeitrahmen von drei Monaten umsetzen lassen und eine möglichst
+            gute Note erzielen.</p>
+          <p style="color: brown;">Suche nach interessanten Themen für Multimedia Produzenten, prüfe, ob die Themen
+            aktuell, akademisch relevant und unerforscht sind und wähle die fünf vielversprechendsten Themen aus.</p>
+          <p style="color: #ffd300;"><span style="color: green;">Die Liste sollte tabellarisch sein</span> und
+            Informationen wie Thema, Kurzbeschrieb, Begründung und Relevanz enthalten.</p>
+          <p style="color: grey;">Verwende eine akademische Tonalität.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Start Divider-->
+    <section id="th-sec" class="section bfooter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 center-txt">
+            <h5>"Heute ist ChatGPT bei uns in den Lehrveranstaltungen ein großes Thema (...) Es stellen sich gerade
+              fundamentale Fragen, so wie es vor 30 Jahren war, am Anfang des World Wide Webs."</h5>
+            <p> - Albrecht Schmidt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Divider-->
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../assets/js/color-modes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- Script to Load Header & Footer -->
+  <script src="js/loadHeaderFooter.js"></script>
+</body>
+
+</html>

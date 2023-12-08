@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Scrollytelling Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+  <!-- Docsearch CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <div id="header"></div>
+
+
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1511075675422-c8e008f749d7?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100" alt="Description">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Praxistipps für die Nutzung</h1>
+              <p class="opacity-75">Konkrete Anwendungsbeispiele und bewährte Strategien.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container py-4">
+      <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Praxistipps | Workarounds</h1>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+
+      <div class="row text-center pb-4">
+        <div class="col-md-12"></div>
+        <h2>Nice to know: nützliche «Hacks»</h2>
+
+        <p>Zögere den Fade-Out hinaus, in dem du Konversationen regelmässig zusammenfassen lässt (ca. alle 3‘000 Worte).
+        </p>
+        <p>Führe mehrere Konversationen zusammen, in dem du sie teilst und die Links analysieren lässt (nur mit
+          Beta-Features möglich).</p>
+        <p>Lege Custom Instructions an, um ChatGPT über Konversationen hinweg grundlegende Informationen zu deiner
+          Person und deinen Präferenzen mitzuteilen.</p>
+        <p>Arbeite effizienter, in dem du Shortcuts einsetzt</p>
+        <p><strong>Reduziere Halluzinationen, in dem du:</strong>
+        <ul class="custom-list">
+          <li>alle Prompt-Komponenten genau definierst</li>
+          <li>Prompts-Techniken einsetzt (z. B. one shot prompts)</li>
+          <li>emotional promptest (z. B. die Antwort ist äusserst wichtig für meine Karriere)</li>
+        </ul>
+        </p>
+
+        <p>Modifiziere KI-Outputs, in dem du die hinterlegten Parameter manipulierst.
+        <table class="table-hover">
+          <tr>
+            <th>Parameter</th>
+            <th>Beschreibung</th>
+            <th>Range</th>
+          </tr>
+          <tr>
+            <td>temperature</td>
+            <td>steuert Kreativität des generierten Texts</td>
+            <td>0.0 bis 1.0</td>
+          </tr>
+          <tr>
+            <td>diversity penalty</td>
+            <td>steuert Vielfalt der generierten Ausgabe</td>
+            <td>-2.0 bis 2.0</td>
+          </tr>
+          <tr>
+            <td>frequency penalty</td>
+            <td>steuert Häufigkeit der Wortwiederholungen</td>
+            <td>-2.0 bis 2.0</td>
+          </tr>
+          <tr>
+            <td>presence penalty</td>
+            <td>steuert Fokus auf Thema / Streubreite</td>
+            <td>-2.0 bis 2.0</td>
+          </tr>
+          <tr>
+            <td>Max length</td>
+            <td>steuert Länge des generierten Texts</td>
+            <td>1.0 bis 2048 Tokens</td>
+          </tr>
+        </table>
+        </p><br>
+        <p><strong>alle Stricke reissen:</strong>
+        <ul class="custom-list">
+          <li>starte eine neue Konversation (Reset von berücksichtigtem Kontext)</li>
+          <li>versuche es auf Englisch (mehr Trainingsdaten verfügbar)</li>
+          <li>gönne dir eine Pause (Wald vor lauter Bäumen nicht mehr sehen)</li>
+        </ul>
+        </p>
+        <hr class="divider">
+      </div>
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h2>Bibliothek: mache deine Prompts einfach zugänglich</h2>
+
+          <p>wiederkehrende Aufgaben über Prompts mit [Platzhaltern] automatisieren</p>
+          <p>personalisierte Prompt Library aufbauen</p>
+          <p><strong>Beispiele:</strong>
+          <ul class="custom-list">
+            <li>Editorizer (Texte analysieren und lektorieren lassen)</li>
+            <li>Summarizer (Texte zusammenfassen lassen)</li>
+            <li>Translator (Texte übersetzen lassen)</li>
+            <li>Paraphrazer (Texte für Publikationskanal / Zielgruppe optimieren lassen)</li>
+            <li>usw.</li>
+          </ul>
+          </p>
+          <p>ACHTUNG: selbstverständlich müssen alle KI-generierten Outputs überprüft werden!</p>
+          <p>Ein Beispiel für eine Prompt-Library findest du hier (alle Prompts ohne Gewähr)</p><br>
+          <p><strong>alle Stricke reissen:</strong>
+          <ul class="custom-list">
+            <li>starte eine neue Konversation (Reset von berücksichtigtem Kontext)</li>
+            <li>versuche es auf Englisch (mehr Trainingsdaten verfügbar)</li>
+            <li>gönne dir eine Pause (Wald vor lauter Bäumen nicht mehr sehen)</li>
+          </ul>
+          </p>
+        </div>
+
+
+        <div class="col-md-6">
+          <h2>Zusammenfassung | zehn goldene Regeln</h2>
+
+          <p>Definiere Prompt-Komponenten (z. B. task, context, example, persona, format, tone)</p>
+          <p>Editiere deine Prompts und nutze Follow-up-Prompts zur Präzisierung</p>
+          <p><strong>Halte Inputs simpel und strukturiert:</strong>
+          <ul class="custom-list">
+            <li>sei spezifisch und trenne Prompt-Komponenten ab (###)</li>
+            <li>keine doppelte Verneinung, Schachtelsätze oder Füllwörter</li>
+            <li>achte auf korrekte Rechtschreibung und Grammatik</li>
+          </ul>
+          </p>
+          <p>Lass deiner Kreativität freien Lauf und experimentiere mit neuen Prompts</p>
+          <p>Gönn dir das Upgrade und nutze Beta-Features und Plugins</p>
+          <p>Kenne die Limitationen der KI (Wissensstand, Bias, Halluzinationen, Fade Out und Conversation Border)</p>
+          <p>Finde Workarounds und nutze sie (z. B. Prompt-Techniken, Beta-Features und Plugins)</p>
+          <p>Hinterfrage ChatGPT kritisch (Datenschutz, Halluzinationen und Bias) und bleib transparent (Deklaration der
+            genutzten AI-Tools*)</p>
+          <p>Tausche dich aus und teile dein Wissen (Sharing is Caring!)</p>
+          <p>* KI-Detektoren wie Turnitin, ZeroGPT und Classifier sind zwar (noch) nicht zuverlässig. Doch wer weiss,
+            was die Zukunft
+            bringt (Stichwort: Plagiarism Hunting).</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Start  Divider-->
+    <section id="th-sec" class="section bfooter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 center-txt">
+            <h5>"KI kann für den Menschen gefährlich werden, aber es hängt davon ab, wie sie eingesetzt wird. ChatGPT
+              ist nur der Anfang der Entwicklung von immer leistungsfähigeren KI-Systemen."</h5>
+            <p> - ChatGPT​</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END  Divider-->
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="../assets/js/color-modes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <!-- Script to Load Header & Footer -->
+  <script src="js/loadHeaderFooter.js"></script>
+</body>
+
+</html>
